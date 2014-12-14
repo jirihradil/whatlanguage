@@ -4,7 +4,7 @@ by Jiri Hradil (jiri@hradil.cz)
 
 This is a fork of https://github.com/peterc/whatlanguage
 
-Original gems works with Dutch, English, Farsi, French, German, Italian, Pinyin, Swedish, Portuguese, Russian, Arabic, Finnish, Greek, Hebrew, Hungarian, Korean, Norwegian, Polish and Spanish out of the box.
+The original gems works with Dutch, English, Farsi, French, German, Italian, Pinyin, Swedish, Portuguese, Russian, Arabic, Finnish, Greek, Hebrew, Hungarian, Korean, Norwegian, Polish and Spanish out of the box.
 
 This gem adds the Czech language. Nothing else was added nor updated.
 
