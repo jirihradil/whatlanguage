@@ -3,13 +3,14 @@ require 'whatlanguage/bitfield'
 require 'digest/sha1'
 
 class WhatLanguage
-  HASHER = lambda { |item| Digest::SHA1.digest(item.downcase.strip).unpack("VV") }
+  HASHER = lambda { |item| puts item; Digest::SHA1.digest(item.downcase.strip).unpack("VV") }
 
   BITFIELD_WIDTH = 2_000_000
 
   ISO_CODES = {
     nil => nil,
     :arabic => :ar,
+    :czech => :cs,
     :danish => :da,
     :dutch  => :nl,
     :english => :en,

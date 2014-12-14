@@ -1,6 +1,6 @@
 # Builds all of the word lists in ./wordlists/ into filter files in ./lang/
 
-require 'lib/whatlanguage'
+require './lib/whatlanguage.rb'
 
 languages_folder = File.join(File.dirname(__FILE__), "lang")
 wordlists_folder = File.join(File.dirname(__FILE__), "wordlists")
