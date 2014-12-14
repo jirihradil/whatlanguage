@@ -1,16 +1,14 @@
-# whatlanguage
+# whatlanguage with czech language support
 
-by Peter Cooper
+by Jiri Hradil (jiri@hradil.cz)
 
-Text language detection. Quick, fast, memory efficient, and all in pure Ruby. Uses Bloom filters for aforementioned speed and memory benefits.
+This is a fork of https://github.com/peterc/whatlanguage
 
-Works with Dutch, English, Farsi, French, German, Italian, Pinyin, Swedish, Portuguese, Russian, Arabic, Finnish, Greek, Hebrew, Hungarian, Korean, Norwegian, Polish and Spanish out of the box.
+Original gems works with Dutch, English, Farsi, French, German, Italian, Pinyin, Swedish, Portuguese, Russian, Arabic, Finnish, Greek, Hebrew, Hungarian, Korean, Norwegian, Polish and Spanish out of the box.
 
-## Important note
+This gem adds the Czech language. Nothing else was added nor updated.
 
-This library was first built in 2007 and has received a few minor updates over the years. There are now more efficient and effective algorithms for doing language detection which I am investigating for a WhatLanguage 2.0.
-
-This library has been updated to be distributed and to work on modern Ruby implementations but other than that, has had no improvements.
+The czech word list was extracted from Milan Svoboda's GNU/FDL English to Czech dictionary available at http://slovnik.zcu.cz. Thanks Milan.
 
 ## Synopsis
 
@@ -19,23 +17,20 @@ Full Example
 ```ruby
 require 'whatlanguage'
 
-texts = []
-texts << %q{Deux autres personnes ont été arrêtées durant la nuit}
-texts << %q{The links between the attempted car bombings in Glasgow and London are becoming clearer}
-texts << %q{En estado de máxima alertaen su nivel de crítico}
-texts << %q{Returns the object in enum with the maximum value.}
-texts << %q{Propose des données au sujet de la langue espagnole.}
-texts << %q{La palabra "mezquita" se usa en español para referirse a todo tipo de edificios dedicados.}
-texts << %q{اللغة التي هي هذه؟}
-texts << %q{Mitä kieltä tämä on?}
-texts << %q{Ποια γλώσσα είναι αυτή;}
-texts << %q{באיזו שפה זה?}
-texts << %q{Milyen nyelv ez?}
-texts << %q{이 어떤 언어인가?}
-texts << %q{Hvilket språk er dette?}
-texts << %q{W jakim języku to jest?}
+"Ahoj, jak se máš".language
+ => :czech 
+ 
+2.1.2 :004 > "Splatnost faktury".language
+ => :czech 
 
-texts.each { |text| puts "#{text[0..18]}... is in #{text.language.to_s.capitalize}" }
+2.1.2 :005 > "Splatnost faktury je 15 dnů".language
+ => :czech 
+
+2.1.2 :007 > "Dodací adresa".language
+ => :czech 
+
+2.1.2 :010 > "Faktura".language
+ => :czech
 ```
 
 Initialize WhatLanguage with all filters
