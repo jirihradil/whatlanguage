@@ -8,7 +8,7 @@ The original gems works with Dutch, English, Farsi, French, German, Italian, Pin
 
 This gem adds the Czech language. Nothing else was added nor updated.
 
-The czech word list was extracted from Milan Svoboda's GNU/FDL English to Czech dictionary available at http://slovnik.zcu.cz. Thanks Milan.
+The czech word list was extracted from Milan Svoboda's (and collaborators) GNU/FDL English to Czech dictionary available at http://slovnik.zcu.cz. Thanks Milan and other collaborators/authors: http://slovnik.zcu.cz/spoluprace.php
 
 ## Synopsis
 
